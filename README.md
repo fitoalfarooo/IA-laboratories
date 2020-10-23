@@ -11,7 +11,7 @@ Solucion: https://colab.research.google.com/drive/1qdfWozldUK2Mdn68hDVX4IbWeE45O
 
 # Lab 2 (Week 6)
 
-# 1.Which  Linear  Regression  training  algorithm  can  you  use  if  you  have  a  training set with millions of features?
+**1.Which  Linear  Regression  training  algorithm  can  you  use  if  you  have  a  training set with millions of features?
  
 Puede usar “Descenso de gradiente estocástico” o “Descenso de gradiente de mini-lote”, en algunos casos también se recomienda “Descenso de gradiente por lotes” si el conjunto de datos de entrenamiento cabe en la memoria. Además, cabe destacar, que NO puede usar una ecuación normal porque la complejidad computacional crece muy rápido.
  
