@@ -55,4 +55,10 @@ Solucion: https://colab.research.google.com/drive/12-7Jvecku0U8nPUk1V47lcCzQOkyM
 
 # Lab 4 (Week 8)
 
-![Guía Parte 1](<./assets/1.png>) 
+**1. The  TensorFlow  Playground  is  a  handy  neural  network  simulator  built  by  theTensorFlow team. In this exercise, you will train several binary classifiers in just a few  clicks,  and  tweak  the  model’s  architecture  and  its  hyperparameters  to  gain some  intuition  on  how  neural  networks  work  and  what  their  hyperparameters do. Take some time to explore the following:**
+
+(<./images/inicio.png>) 
+
+a. The patterns learned by a neural net. Try training the default neural network by clicking the Run button (top left). Notice how it quickly finds a good solu‐tion  for  the  classification  task.  The  neurons  in  the  first  hidden  layer  have learned  simple  patterns,  while  the  neurons  in  the  second  hidden  layer  have learned  to  combine  the  simple  patterns  of  the  first  hidden  layer  into  more complex patterns. In general, the more layers there are, the more complex the patterns can be.
+
+(<./images/a.png>) 
