@@ -1,5 +1,5 @@
 # IA-laboratories
-Laboratories evaluated from weeks 5-6-7-8 of the 2nd semester of 2020 of the Artificial Intelligence course at the Instituto Tecnologico de Costa Rica
+Laboratorios evaluados de las semanas 5-6-7-8 del curso de Inteligencia Artificial del II Semestre del 2020 en el Instituto Tecnologico de Costa Rica 
 
 # Lab 1 (Week 5)
 
