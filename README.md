@@ -57,33 +57,33 @@ Solucion: https://colab.research.google.com/drive/12-7Jvecku0U8nPUk1V47lcCzQOkyM
 
 **1. The  TensorFlow  Playground  is  a  handy  neural  network  simulator  built  by  theTensorFlow team. In this exercise, you will train several binary classifiers in just a few  clicks,  and  tweak  the  model’s  architecture  and  its  hyperparameters  to  gain some  intuition  on  how  neural  networks  work  and  what  their  hyperparameters do. Take some time to explore the following:**
 
-![inicio](<./images/inicio.png>) 
+![inicio](<./images/inicio.PNG>) 
 
 a. The patterns learned by a neural net. Try training the default neural network by clicking the Run button (top left). Notice how it quickly finds a good solu‐tion  for  the  classification  task.  The  neurons  in  the  first  hidden  layer  have learned  simple  patterns,  while  the  neurons  in  the  second  hidden  layer  have learned  to  combine  the  simple  patterns  of  the  first  hidden  layer  into  more complex patterns. In general, the more layers there are, the more complex the patterns can be.
 
-![a](<./images/a.png>) 
+![a](<./images/a.PNG>) 
 
 b. Activation  functions.  Try  replacing  the  tanh  activation  function  with  a  ReLU activation function, and train the network again. Notice that it finds a solution even faster, but this time the boundaries are linear. This is due to the shape of the ReLU function.
 
-![b](<./images/b.png>) 
+![b](<./images/b.PNG>) 
 
 c. The  risk  of  local  minima.  Modify  the  network  architecture  to  have  just  one hidden layer with three neurons. Train it multiple times (to reset the network weights, click the Reset button next to the Play button). Notice that the train‐ing time varies a lot, and sometimes it even gets stuck in a local minimum.
 
-![c](<./images/c.png>)
+![c](<./images/c.PNG>)
 
-![c2](<./images/c2.png>) 
+![c2](<./images/c2.PNG>) 
 
 d. What  happens  when  neural  nets  are  too  small.  Remove  one  neuron  to  keep just  two.  Notice  that  the  neural  network  is  now  incapable  of  finding  a  good solution,  even  if  you  try  multiple  times.  The  model  has  too  few  parameters and systematically underfits the training set.
 
-![d](<./images/d.png>) 
+![d](<./images/d.PNG>) 
 
 e. What happens when neural nets are large enough. Set the number of neurons to eight, and train the network several times. Notice that it is now consistently fast and never gets stuck. This highlights an important finding in neural net‐work  theory:  large  neural  networks  almost  never  get  stuck  in  local  minima,and  even  when  they  do  these  local  optima  are  almost  as  good  as  the  global optimum. However, they can still get stuck on long plateaus for a long time.
  
-![e](<./images/e.png>) 
+![e](<./images/e.PNG>) 
 
 f. The risk of vanishing gradients in deep networks. Select the spiral dataset (the bottom-right dataset under “DATA”), and change the network architecture to have  four  hidden  layers  with  eight  neurons  each.  Notice  that  training  takes much  longer  and  often  gets  stuck  on  plateaus  for  long  periods  of  time.  Also notice  that  the  neurons  in  the  highest  layers  (on  the  right)  tend  to  evolve faster than the neurons in the lowest layers (on the left). This problem, called the “vanishing gradients” problem, can be alleviated with better weight initial‐ization  and  other  techniques,  better  optimizers  (such  as  AdaGrad  or  Adam),or Batch Normalization (discussed in Chapter 11).
 
-![f](<./images/f.png>) 
+![f](<./images/f.PNG>) 
 
 **5. Name three popular activation functions. Can you draw them?**
  
