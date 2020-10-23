@@ -1,5 +1,5 @@
 # IA-laboratories
-Laboratorios evaluados de las semanas 5-6-7-8 del curso de Inteligencia Artificial del II Semestre del 2020 en el Instituto Tecnologico de Costa Rica 
+Laboratories evaluated from weeks 5-6-7-8 of the Artificial Intelligence course of the II Semester of 2020 at the Technological Institute of Costa Rica 
 
 # Lab 1 (Week 5)
 
@@ -13,31 +13,31 @@ Solucion: https://colab.research.google.com/drive/1qdfWozldUK2Mdn68hDVX4IbWeE45O
 
 **1.Which  Linear  Regression  training  algorithm  can  you  use  if  you  have  a  training set with millions of features?**
  
-Puede usar “Descenso de gradiente estocástico” o “Descenso de gradiente de mini-lote”, en algunos casos también se recomienda “Descenso de gradiente por lotes” si el conjunto de datos de entrenamiento cabe en la memoria. Además, cabe destacar, que NO puede usar una ecuación normal porque la complejidad computacional crece muy rápido.
+You can use “Stochastic gradient descent” or “Mini-batch gradient descent”, in some cases “Batch gradient descent” is also recommended if the training dataset fits in memory. Also, it should be noted, that you can NOT use a normal equation because computational complexity grows very fast.
  
 **3.Can  Gradient  Descent  get  stuck  in  a  local  minimum  when  training  a  Logistic Regression model?**
  
-No se puede porque la función de costo es convexa, esto quiere decir que si se dibuja una línea recta entre dos puntos cualesquiera de la curva, la línea nunca cruza la curva.
+It cannot be done because the cost function is convex, this means that if a straight line is drawn between any two points on the curve, the line never crosses the curve.
  
 **5.Suppose  you  use  Batch  Gradient  Descent  and  you  plot  the  validation  error  at every  epoch.  If  you  notice  that  the  validation  error  consistently  goes  up, what  is likely going on? How can you fix this?**
  
-1. Significa que la tasa de aprendizaje es demasiado alta y el algoritmo diverge. 
+1. It means that the learning rate is too high and the algorithm diverges.
  
-2. Si el error de entrenamiento también aumenta, entonces, este es el problema y para solucionarlo se debe reducir la tasa de aprendizaje, pero si el error de entrenamiento no aumenta, es porque el conjunto de datos de entrenamiento está sobreajustado y en ese caso se debe detener por completo el entrenamiento para solucionarlo.
+2. If the training error also increases, then this is the problem and to solve it the learning rate must be reduced, but if the training error does not increase, it is because the training data set is over-adjusted and in that case training must be stopped completely to fix it.
  
 **7.Which  Gradient  Descent  algorithm  (among  those  we  discussed)  will  reach  the vicinity  of  the  optimal  solution  the  fastest?  Which  will  actually converge?  How Can you make the others converge as well?**
  
-1. El “Estocástico”, porque considera solo una instancia de entrenamiento a la vez, por lo que generalmente es el primero en alcanzar la vecindad del óptimo global. 
+1. The “Stochastic”, because it considers only one instance of training at a time, so it is generally the first to reach the neighborhood of the global optimum.
  
-2. Únicamente el “Descenso de gradiente por lotes” va a converger.
+2. Only “Batch Gradient Descent” will converge.
  
-3. Ningún otro algoritmo puede llegar a converger normalmente, solo se acercan al mínimo global, al menos de que se reduzca gradualmente la tasa de aprendizaje 
+3. No other algorithm can converge normally, they only approach the global minimum, unless the learning rate is gradually reduced
  
 **9.Suppose  you  are  using  Ridge  Regression  and  you  notice  that  the  training error and the validation error are almost equal and fairly high. Would you say that the model suffers from high bias or high variance? Should you increase the regularization hyperparameter α or reduce it?**
  
-1. Si el error de entrenamiento y el error de validación son casi iguales y bastante altos, es probable que el modelo NO se ajuste al conjunto de entrenamiento, lo que significa que tiene un alto sesgo. 
+1. If the training error and the validation error are almost equal and quite high, it is likely that the model does NOT fit the training set, which means that it has a high bias.
  
-2. Debería reducirlo. 
+2. You should reduce it. 
 
 # Lab 3 (Week 7)
 
@@ -95,10 +95,14 @@ f. The risk of vanishing gradients in deep networks. Select the spiral dataset (
 
 **7. How many neurons do you need in the output layer if you want to classify email into spam or ham? What activation function should you use in the output layer? If instead you want to tackle MNIST, how many neurons do you need in the out‐put layer, and which activation function should you use? What about for getting your network to predict housing prices, as in Chapter 2?**
 
-1. Únicamente necesita 1 neurona en la capa de salida de una red neuronal, por ejemplo, la que establece la probabilidad de que el correo electrónico sea spam.
+1. You only need 1 neuron in the output layer of a neural network, for example, the one that sets the probability that email is spam.
  
-2. Podría utilizar la función de activación logística en la capa de salida.
+2. You could use the logistic activation function in the output layer.
  
-3. Necesita 10 neuronas en la capa de salida y debe usar la función de activación “Softmax”, porque esta puede manejar múltiples clases, generando una probabilidad por clase.
+3. You need 10 neurons in the output layer and you must use the “Softmax” activation function, because it can handle multiple classes, generating one probability per class.
  
-4. Necesita una neurona de salida que no utilice ninguna función de activación.
+4. You need an output neuron that does not use a trigger function.
+
+**10. Train  a  deep  MLP  on  the  MNIST  dataset  (you  can  load  it  using  keras.datasets.mnist.load_data().  See  if  you  can  get  over  98%  precision.  Try  searchingfor the optimal learning rate by using the approach presented in this chapter (i.e.,by  growing  the  learning  rate  exponentially,  plotting  the  loss,  and  finding  thepoint  where  the  loss  shoots  up).  Try  adding  all  the  bells  and  whistles—savecheckpoints, use early stopping, and plot learning curves using TensorBoard.**
+
+Solution:
