@@ -11,21 +11,21 @@ Solution: https://colab.research.google.com/drive/1qdfWozldUK2Mdn68hDVX4IbWeE45O
 
 # Lab 2 (Week 6)
 
-**1.Which  Linear  Regression  training  algorithm  can  you  use  if  you  have  a  training set with millions of features?**
+**1. Which  Linear  Regression  training  algorithm  can  you  use  if  you  have  a  training set with millions of features?**
  
  You can use “Stochastic gradient descent” or “Mini-batch gradient descent”, in some cases “Batch gradient descent” is also recommended if the training dataset fits in memory. Also, it should be noted, that you can NOT use a normal equation because computational complexity grows very fast.
  
-**3.Can  Gradient  Descent  get  stuck  in  a  local  minimum  when  training  a  Logistic Regression model?**
+**3. Can  Gradient  Descent  get  stuck  in  a  local  minimum  when  training  a  Logistic Regression model?**
  
  It cannot be done because the cost function is convex, this means that if a straight line is drawn between any two points on the curve, the line never crosses the curve.
  
-**5.Suppose  you  use  Batch  Gradient  Descent  and  you  plot  the  validation  error  at every  epoch.  If  you  notice  that  the  validation  error  consistently  goes  up, what  is likely going on? How can you fix this?**
+**5. Suppose  you  use  Batch  Gradient  Descent  and  you  plot  the  validation  error  at every  epoch.  If  you  notice  that  the  validation  error  consistently  goes  up, what  is likely going on? How can you fix this?**
  
 1. It means that the learning rate is too high and the algorithm diverges.
  
 2. If the training error also increases, then this is the problem and to solve it the learning rate must be reduced, but if the training error does not increase, it is because the training data set is over-adjusted and in that case training must be stopped completely to fix it.
  
-**7.Which  Gradient  Descent  algorithm  (among  those  we  discussed)  will  reach  the vicinity  of  the  optimal  solution  the  fastest?  Which  will  actually converge?  How Can you make the others converge as well?**
+**7. Which  Gradient  Descent  algorithm  (among  those  we  discussed)  will  reach  the vicinity  of  the  optimal  solution  the  fastest?  Which  will  actually converge?  How Can you make the others converge as well?**
  
 1. The “Stochastic”, because it considers only one instance of training at a time, so it is generally the first to reach the neighborhood of the global optimum.
  
@@ -33,7 +33,7 @@ Solution: https://colab.research.google.com/drive/1qdfWozldUK2Mdn68hDVX4IbWeE45O
  
 3. No other algorithm can converge normally, they only approach the global minimum, unless the learning rate is gradually reduced
  
-**9.Suppose  you  are  using  Ridge  Regression  and  you  notice  that  the  training error and the validation error are almost equal and fairly high. Would you say that the model suffers from high bias or high variance? Should you increase the regularization hyperparameter α or reduce it?**
+**9. Suppose  you  are  using  Ridge  Regression  and  you  notice  that  the  training error and the validation error are almost equal and fairly high. Would you say that the model suffers from high bias or high variance? Should you increase the regularization hyperparameter α or reduce it?**
  
 1. If the training error and the validation error are almost equal and quite high, it is likely that the model does NOT fit the training set, which means that it has a high bias.
  
@@ -43,13 +43,13 @@ Solution: https://colab.research.google.com/drive/1qdfWozldUK2Mdn68hDVX4IbWeE45O
 
 **Train  and  fine-tune  a  Decision  Tree  for  the  moons  dataset  by  following  these steps:**
 
-a.Use make_moons(n_samples=10000, noise=0.4) to generate a moons dataset.
+a. Use make_moons(n_samples=10000, noise=0.4) to generate a moons dataset.
 
-b.Use train_test_split() to split the dataset into a training set and a test set.
+b. Use train_test_split() to split the dataset into a training set and a test set.
 
-c.Use  grid  search  with  cross-validation  (with  the  help  of  the  GridSearchCVclass)  to  find  good  hyperparameter  values  for  a  DecisionTreeClassifier.Hint: try various values for max_leaf_nodes.
+c. Use  grid  search  with  cross-validation  (with  the  help  of  the  GridSearchCVclass)  to  find  good  hyperparameter  values  for  a  DecisionTreeClassifier.Hint: try various values for max_leaf_nodes.
 
-d.Train  it  on  the  full  training  set  using  these  hyperparameters,  and  measure your model’s performance on the test set. You should get roughly 85% to 87%accuracy.
+d. Train  it  on  the  full  training  set  using  these  hyperparameters,  and  measure your model’s performance on the test set. You should get roughly 85% to 87%accuracy.
 
 Solution: https://colab.research.google.com/drive/12-7Jvecku0U8nPUk1V47lcCzQOkyMyxp?usp=sharing
 
