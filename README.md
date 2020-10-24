@@ -101,8 +101,8 @@ f. The risk of vanishing gradients in deep networks. Select the spiral dataset (
  
 3. You need 10 neurons in the output layer and you must use the “Softmax” activation function, because it can handle multiple classes, generating one probability per class.
  
-4. You need an output neuron that does not use a trigger function.
+4. You need 1 output neuron that does not use a trigger function.
 
 **10. Train  a  deep  MLP  on  the  MNIST  dataset  (you  can  load  it  using  keras.datasets.mnist.load_data().  See  if  you  can  get  over  98%  precision.  Try  searchingfor the optimal learning rate by using the approach presented in this chapter (i.e.,by  growing  the  learning  rate  exponentially,  plotting  the  loss,  and  finding  thepoint  where  the  loss  shoots  up).  Try  adding  all  the  bells  and  whistles—savecheckpoints, use early stopping, and plot learning curves using TensorBoard.**
 
-Solution:
+Solution: https://colab.research.google.com/drive/1SBPYCSlXleg-0vXA-BFo6uvi8XBoYsle?usp=sharing
