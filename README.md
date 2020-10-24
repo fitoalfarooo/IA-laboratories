@@ -13,11 +13,11 @@ Solution: https://colab.research.google.com/drive/1qdfWozldUK2Mdn68hDVX4IbWeE45O
 
 **1.Which  Linear  Regression  training  algorithm  can  you  use  if  you  have  a  training set with millions of features?**
  
-You can use “Stochastic gradient descent” or “Mini-batch gradient descent”, in some cases “Batch gradient descent” is also recommended if the training dataset fits in memory. Also, it should be noted, that you can NOT use a normal equation because computational complexity grows very fast.
+ You can use “Stochastic gradient descent” or “Mini-batch gradient descent”, in some cases “Batch gradient descent” is also recommended if the training dataset fits in memory. Also, it should be noted, that you can NOT use a normal equation because computational complexity grows very fast.
  
 **3.Can  Gradient  Descent  get  stuck  in  a  local  minimum  when  training  a  Logistic Regression model?**
  
-It cannot be done because the cost function is convex, this means that if a straight line is drawn between any two points on the curve, the line never crosses the curve.
+ It cannot be done because the cost function is convex, this means that if a straight line is drawn between any two points on the curve, the line never crosses the curve.
  
 **5.Suppose  you  use  Batch  Gradient  Descent  and  you  plot  the  validation  error  at every  epoch.  If  you  notice  that  the  validation  error  consistently  goes  up, what  is likely going on? How can you fix this?**
  
